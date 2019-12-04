@@ -1,0 +1,513 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+.login-form, .changepassword-form{
+    width: 340px;
+    margin: 50px auto;
+
+}
+.login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+}
+.login-form h2 {
+    margin: 0 0 15px;
+}
+.form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+}
+.input-group-append .fa {
+    font-size: 18px;
+}
+.btn {
+    font-size: 15px;
+    font-weight: bold;
+}
+/*******************************Calendar Top Navigation*********************************/
+div#calendar{
+    margin:0px auto;
+    padding:0px;
+    width: 200px;
+    font-family:Helvetica, "Times New Roman", Times, serif;
+}
+
+div#calendar div.box{
+    position:relative;
+    top:0px;
+    left: -10px;
+    width:100%;
+    height:25px;
+    background-color:   #052131;
+}
+
+div#calendar div.header{
+    line-height:28px;
+    vertical-align:middle;
+    position:absolute;
+    left:11px;
+    top:0px;
+    width: 178px;
+    height:23px;
+    text-align:center;
+}
+
+div#calendar div.header a.prev,div#calendar div.header a.next{
+    position:absolute;
+    top:0px;
+    height: 15px;
+    display:block;
+    cursor:pointer;
+    text-decoration:none;
+    color:#FFF;
+}
+
+div#calendar div.header span.title{
+    color:#FFF;
+    font-size:15px;
+}
+
+div#calendar div.header a.prev{
+    left:0px;
+}
+
+div#calendar div.header a.next{
+    right:0px;
+}
+
+/*******************************Calendar Content Cells*********************************/
+div#calendar div.box-content{
+    border:1px solid #052131;
+    border-top:none;
+    margin-left: -10px;
+    margin-right: 10px;
+}
+
+div#calendar ul.label{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    margin-top:5px;
+    margin-left: 6px;
+}
+
+div#calendar ul.label li{
+    margin:0px;
+    padding:0px;
+    margin-right:4px;
+    float:left;
+    list-style-type:none;
+    width: 23px;
+    height: 17px;
+    line-height: 25px;
+    vertical-align:middle;
+    text-align:center;
+    color: white;
+    font-size: 13px;
+    background-color: transparent;
+}
+
+div#calendar ul.dates{
+    float:left;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+}
+
+/** overall width = width+padding-right**/
+div#calendar ul.dates li{
+    margin: 0px;
+    padding: 0px;
+    margin-right: 4px;
+    margin-top: 5px;
+    line-height: 25px;
+    vertical-align:middle;
+    float:left;
+    list-style-type:none;
+    width: 23px;
+    height: 22px;
+    font-size: 13px;
+    background-color: #38434c;
+    color:white;
+    text-align:center;
+}
+
+:focus{
+    outline:none;
+}
+
+div.clear{
+    clear:both;
+}
+.left-menu{
+    background-color: #38434c;
+}
+.btn-primary {
+    background-color: #1b4b72 !important;
+    border: #1b4b72;
+}
+.nav-link {
+    color: #fefefe;
+    display: block;
+    height: 40px;
+}
+.nav-link i {
+    padding-right: 10px;
+    font-size: 18px;
+}
+.calendar-display {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.avatar {
+    padding-top: 10px;
+    float: left;
+}
+.name-display {
+    position: relative;
+    left: 10px;
+    top: 21px;
+    color: #fefefe;
+}
+.menu-display {
+    position: relative;
+    top: 35px;
+    font-size: 14px;
+}
+.navbar {
+    left: -48px;
+}
+.nav-item {
+    width: 200px;
+}
+#content-header {
+    height: 50px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: solid 1px #1b4b72;
+    font-weight: bold;
+    color: #1b4b72;
+    padding-top: 10px;
+}
+.end-title, .end-date, .holiday{
+     color: red !important;
+}
+.current-date {
+    background-color: #1f6fb2 !important;
+}
+.prev i, .next i {
+    padding-top: 6px;
+    font-size: 15px;
+}
+.prev i:hover, .next i:hover {
+    color: #c8cbcf;
+}
+#welcome {
+    height: 50px;
+    color: #761b18;
+    font-size: 18px;
+    padding-top:  10px;
+}
+.message {
+    padding-top: 20px;
+    font-size: 20px;
+    color: #DDDDDD;
+}
+
+/*Style fo Display clock*/
+
+.time-text{
+    padding-bottom: 5px;
+    color: #0dadea;
+    font-size: 20px;
+}
+/*Style for Clock Display END*/
+#welcome a {
+    background-color: #0e94c1 !important;
+    border: 1px solid #0e94c1;
+    color: #fff ;
+    padding: 8px 20px;
+    border-radius: 3px;
+    transition: all 0.3s;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+    position: absolute;
+    right: 15px;
+}
+
+#welcome a:hover {
+    text-decoration: none;
+    color: #1b4b72;
+}
+.span {
+    padding: 0px 10px;
+    font-size: 25px;
+}
+#vacation-date, #reason-label, #time-label {
+    padding: 5px 20px;
+}
+#reason-label {
+    padding-right: 67px;
+}
+#time-label {
+    padding-left: 20px;
+    padding-right: 83px;
+}
+.h6-top {
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    padding-bottom: 2px;
+    border-bottom: solid 1px #1b4b72;
+}
+.h6-sub {
+    padding-left: 5px;
+}
+a:hover {
+    text-decoration: none;
+}
+.my-holiday-action {
+    padding-left: 343px;
+    padding-bottom: 20px;
+}
+.task-list-header {
+    display: block;
+    background-color: #c7eed8;
+    border: solid 1px #adb5bd;
+    text-align: center;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.task-list-content {
+    border: solid 1px #adb5bd;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.my-task {
+    margin: 0 5px 5px;
+}
+.easy-task {
+    display: block;
+    width: 163px;
+    background-color: #5cd08d;
+    padding-left: 2px;
+    margin-top: 3px;
+    margin-right: 1.5px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+    position: relative;
+    float:left
+}
+.medium-task {
+    display: block;
+    width: 163px;
+    background-color: #fff8b3;
+    padding-left: 2px;
+    margin-top: 3px;
+    margin-right: 1.5px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+    position: relative;
+    float: left;
+}
+.difficult-task {
+    display: block;
+    width: 163px;
+    background-color: #f2a29f;
+    padding-left: 2px;
+    margin-top: 3px;
+    margin-right: 1.5px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+    float: left;
+    position: relative;
+}
+.task-list-content a:hover {
+    color: #212529;
+}
+.task-list-content a {
+    color: #212529;
+}
+.task-detail {
+    font-weight: normal;
+    padding-left: 5px;
+    font-size: 13px;
+}
+.add-task-btn-mem {
+    margin-left: 337px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.add-update-task-btn {
+    margin-left: 187px;
+}
+.label {
+    padding-top: 5px;
+    margin-right: 10px;
+    font-weight: 500;
+}
+.project {
+    margin-left: 45px;
+}
+.assign-member {
+    margin-left: 34px;
+}
+.task-start-day {
+    margin-left: 26px;
+}
+.actual-time {
+    margin-left: 15px;
+}
+.task-name {
+    margin-left: 22px;
+}
+.task-level {
+    margin-left: 28px;
+}
+.task-status {
+    margin-left: 21px;
+}
+.task-type {
+    margin-left: 31px;
+}
+.task-name-head {
+    border-bottom: solid 1px #686868;
+    padding-bottom: 3px;
+    font-size: 13px;
+}
+.close-btn {
+    font-size: 15px;
+}
+.fa-check-square-o {
+    padding-right: 3px;
+}
+.add-task-btn-lead {
+    margin-left: 180px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+}
+.member-task-name {
+    padding: 2px 0;
+    text-align: center;
+    border-top: solid 1px #686868;
+    font-size: 13px;
+    font-weight: 500;
+    display: block;
+    height: 25px;
+}
+#vacation-management{
+    margin-bottom: 20px;
+}
+.right-menu{
+    padding-left: -10px;
+}
+#holidays-table th {
+    background-color: #c7eed8;
+    border: solid 1px #adb5bd;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+#holidays-table td {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.task-name-head i {
+    margin-left: 20px;
+    color: #d0211c;
+}
+#dashboard {
+    height: 100%;
+}
+.task-management-header {
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+.prj-period {
+    max-width: 500px;
+    width: auto;
+    margin-left: 50px;
+    margin-bottom: -10px;
+}
+.search-btn {
+    margin-left: 10px;
+}
+#task form{
+    margin-bottom: 0;
+}
+.fa-times {
+    font-size: 18px;
+    color: #4e555b;
+}
+.btn-close {
+    border: none;
+    background: none;
+    padding: 0;
+    position: absolute;
+    bottom: 3px;
+    right: 1px;
+}
+.changepassword-form .btn {
+    width: 150px;
+    margin-left: 97px;
+}
+.changepassword-form h2 {
+    margin-bottom: 20px;
+}
+#projects-table th,td,#members-table th,td, #member-assign th,td{
+     font-size: 14px;
+}
+
+#members-table th,#projects-table th, #member-assign th{
+    background-color: #c7eed8;
+    border: solid 1px #adb5bd;
+}
+.project-id {
+    padding-right: 27px;
+}
+.start-date {
+    padding-right: 8px;
+}
+.leader-id {
+    padding-right: 50px;
+}
+.name {
+     padding-right: 55px;
+}
+.email {
+    padding-right: 59px;
+}
+.address {
+    padding-right: 41px;
+}
+.birthday {
+    padding-right: 38px;
+}
+.position {
+    padding-right: 41px;
+}
+.role {
+    width: 100px;
+    padding-right: 5px;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    width: 150px;
+    background-color: #38434c;
+    border: none;
+}
+.dropdown > .dropdown-toggle:active {
+    pointer-events: none;
+}
+.btn-export {
+    margin-top: 20px;
+}
+.export-type {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
